@@ -1,9 +1,9 @@
-﻿namespace Program.cs;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Data.Sqlite;
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello, World!");
-    }
-}
+using Business.Interfaces;
+using Business.Modules;
+
+using DataAccess.Interfaces;
+using DataAccess.Repositories;
